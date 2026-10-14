@@ -16,7 +16,7 @@ function suma(a, b) {
 
 //6
 function potenciacion(a, b) {
-  return a ^ b;
+  return a ** b;
 }
 
 //7
@@ -27,7 +27,7 @@ function separarPalabras(texto) {
 //8
 function repetirString(palabra, numeroRepeticiones) {
   let nuevaPalabra = "";
-  for (i = 1; i <= numeroRepeticiones; i++) {
+  for (let i = 1; i <= numeroRepeticiones; i++) {
     nuevaPalabra += palabra;
   }
   return nuevaPalabra;
@@ -38,7 +38,7 @@ function esPrimo(numero) {
   if (numero < 2) {
     return false;
   }
-  for (i = 2; i < numero; i++) {
+  for (let i = 2; i < numero; i++) {
     if (numero % i === 0) {
       return false;
     }
@@ -117,7 +117,7 @@ function eliminarDuplicados(array) {
 }
 
 const arrayConDuplicados = [1, 2, 3, 2, 4, 1, 5];
-console.log("Array sin duplicados: " + eliminarDupl
+console.log("Array sin duplicados: " + eliminarDuplicados(arrayConDuplicados));
 //15
 //16
 //17
@@ -129,4 +129,3 @@ console.log("Array sin duplicados: " + eliminarDupl
 //23
 //24
 //25
-//26
